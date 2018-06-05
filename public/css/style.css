@@ -1,0 +1,123 @@
+*{
+    margin:0; padding:0;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    color: black;
+}
+h1{
+    min-height: 5%;
+    background: #212121;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+h2{
+    font-weight: 600;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: column;
+    list-style: none;
+    color: black;
+}
+ul li{
+    width: 85%;
+    margin: auto;
+}
+#aside{
+    width: 15%;
+    min-height: 100%;
+    background: #3d4249;;
+}
+#aside a{
+    color: white;
+}
+.messages{
+    width: 75%; 
+    height: 60;
+    overflow: auto;
+    margin: auto;
+    margin-top: 5%;
+}
+#main{
+    width: 69%;
+    min-height: 100%;
+    background: lightgray;
+}
+
+/*.speech-bubble {
+    position: relative;
+    background: #2cbb29;
+    border-radius: .4em;
+    margin: 5px 0;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 58px solid transparent;
+    border-right-color: #2cbb29;
+    border-left: 0;
+    margin-top: -58px;
+    margin-left: -58px;
+}*/
+.content-message{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    background: #3d4249;
+    margin-bottom: 1%;
+    box-shadow: 5px 5px 5px 0px #656565;
+    border-radius: 10px;
+}
+.user{
+    width:25%;
+    margin: 3%;
+}
+.user-message{
+    width:75%;
+    padding: 1%;
+    margin: 3%;
+}
+.popUp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3d4249;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#visiteur{
+    background: #3d4249;
+    color: bisque;
+    width: 15%;
+}
+.liste-users{
+    color: wheat
+}
+.form input,form input{
+    margin: 5% auto;
+    height: 50px;
+    min-width: 200px;
+    padding: 5%;
+}

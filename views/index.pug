@@ -1,0 +1,42 @@
+html
+        head
+
+            link(rel="stylesheet", href="css/style.css")
+
+            script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+
+            script(src='/socket.io/socket.io.js')
+            script(src='script/Client.js')
+            script(src='script/app.js')
+            title!= title
+        body
+            .popUp
+                form.connect          
+                    input.pseudo(type="text" placeholder="Saisissez votre pseudo")
+                    input.clickpseudo(type="submit" value="submit")
+                
+            section#aside
+                h1!= message
+                ul
+                    li
+                        h2 Channels
+                    li
+                        a(href='google.com') General
+                    li
+                        a(href='google.com') Gaming
+                    li
+                        a(href='google.com') Random
+
+            section#main
+                h1
+                div.content
+                    div.messages
+                    form(action="" class="form")
+                        label Votre message
+                        textarea(name="", cols="30", rows="10" class="msg")
+                        input(type='submit' class="envois")
+            section#visiteur
+                h1 Users
+                ul.liste-users
+                    
